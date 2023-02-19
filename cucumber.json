@@ -3,47 +3,102 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-01-05T10:46:40.530Z",
         "line": 4,
-        "name": "Option to book a room is available on the page",
+        "name": "",
         "description": "",
-        "id": "book-a-room;option-to-book-a-room-is-available-on-the-page",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2092005600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User access the hotel booking website in his browser",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.user_access_the_hotel_booking_website_in_his_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-02-18T18:29:11.368Z",
+        "line": 8,
+        "name": "User should be able to make a reservation",
+        "description": "",
+        "id": "hotel-booking-reservation;user-should-be-able-to-make-a-reservation",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 9880000000,
+              "duration": 93968200,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I am on the home page",
+            "line": 9,
+            "name": "User clicks on the Book this room button",
             "match": {
-              "location": "features.step_definitions.BookingSteps.i_am_on_the_home_page()"
+              "location": "features.step_definitions.BookingSteps.user_clicks_on_the_book_this_room_button()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 850316400,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I browse through the page",
+            "line": 10,
+            "name": "User enter valid details",
             "match": {
-              "location": "features.step_definitions.BookingSteps.i_browse_through_the_page()"
+              "location": "features.step_definitions.BookingSteps.user_enter_valid_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastname",
+                  "email",
+                  "phone",
+                  "checkin_date",
+                  "checkout_date"
+                ]
+              },
+              {
+                "cells": [
+                  "Steve",
+                  "Jobs",
+                  "steve.jobs@apple.com",
+                  "04578965254",
+                  "18",
+                  "20"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 55706800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks on the Book button",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.user_clicks_on_the_book_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 104000000,
+              "duration": 993900,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I have the option to book a room",
+            "line": 14,
+            "name": "user verifies the booking dates in the popup",
             "match": {
-              "location": "features.step_definitions.BookingSteps.i_have_the_option_to_book_a_room()"
+              "location": "features.step_definitions.BookingSteps.user_verifies_the_booking_dates_in_the_popup()"
             },
             "keyword": "Then "
           }
@@ -55,11 +110,109 @@
         ]
       }
     ],
-    "name": "Book a room",
-    "description": "",
-    "id": "book-a-room",
+    "name": "Hotel booking reservation",
+    "description": "  A customer should be able to use the portal to a hotel room for a desired number of nights based on the availability",
+    "id": "hotel-booking-reservation",
     "keyword": "Feature",
     "uri": "file:src/test/java/features/booking.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-02-18T18:29:14.554Z",
+        "line": 9,
+        "name": "create a vet for each of the specialities",
+        "description": "",
+        "id": "pets-apis;create-a-vet-for-each-of-the-specialities;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "I want to create vet with \"john\",\"chambers\",\"radiology\" and 1",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I should be able to create vet",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-02-18T18:29:14.570Z",
+        "line": 10,
+        "name": "create a vet for each of the specialities",
+        "description": "",
+        "id": "pets-apis;create-a-vet-for-each-of-the-specialities;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "I want to create vet with \"steve\",\"jobs\",\"dentistry\" and 3",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I should be able to create vet",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-02-18T18:29:14.579Z",
+        "line": 11,
+        "name": "create a vet for each of the specialities",
+        "description": "",
+        "id": "pets-apis;create-a-vet-for-each-of-the-specialities;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "I want to create vet with \"mary\",\"manny\",\"surgery\" and 2",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I should be able to create vet",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Pets APIs",
+    "description": "",
+    "id": "pets-apis",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/booking2.feature",
     "tags": []
   }
 ]
